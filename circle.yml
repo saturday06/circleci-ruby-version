@@ -1,0 +1,16 @@
+machine:
+  timezone: Asia/Tokyo
+  environment:
+    NOKOGIRI_USE_SYSTEM_LIBRARIES: 1
+
+dependencies:
+  bundler:
+    without: [development]
+  pre:
+    - ruby --version
+  override:
+    - "bundle install --path=vendor/bundle -j4"
+
+  cache_directories:
+    - ".bundle"
+    - "vendor/bundle"
