@@ -1,5 +1,6 @@
 machine:
   timezone: Asia/Tokyo
+  ruby:
   environment:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: 1
 
